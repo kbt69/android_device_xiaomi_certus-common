@@ -6,9 +6,11 @@ endif
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += ro.boot.btmacaddr=00:00:00:00:00:00
 
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
 # Fastbootd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fastbootd.available=true
+endif
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -380,7 +382,3 @@ persist.log.tag.MAPI-SocketConnection=I \
 persist.log.tag.MAPI-SocketListener=I \
 persist.log.tag.MAPI-CommandProcessor=I \
 ro.surface_flinger.primary_display_orientation=0
-
-# MTKOSP
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mtkosp.maintainer=jmpfbmx

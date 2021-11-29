@@ -1,4 +1,4 @@
-Device configuration for Xiaomi Redmi 6/A (certus)
+Common Device configuration for Xiaomi Redmi 6/A (certus)
 ================================================================
 ### Redmi 6 
 Basic   | Spec Sheet
